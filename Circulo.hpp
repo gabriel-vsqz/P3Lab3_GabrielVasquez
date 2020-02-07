@@ -16,7 +16,7 @@ class Circulo {
                 double getDiametro() {
                         return diametro;
                 };
-                void setLadoC (double c);
+                void setCircunferencia (double c);
                 double getCircunferencia() {
                         return circunferencia;
                 };
