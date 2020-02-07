@@ -17,6 +17,21 @@ int opcion, numero = 0, a = 0, b = 0, c = 0, radio = 0;
 }*/
 
 int main() {
+	cout << "Triángulo\n";
+	cout << "Ingrese Lado A: ";
+        cin >> a;
+	cout << "Ingrese Lado B: ";
+	cin >> b;
+	cout << "Ingrese Lado C: ";
+	cin >> c;
+	Triangulo triangle(a, b, c);
+
+	cout << "Círculo\n";
+	cout << "Ingrese el radio del círculo: ";
+	cin >> radio;
+	Circulo circle(radio);
+
+
 	do {
 		cout << "\n0. Salir\n1. Identificar número triangular previo\n2. Calcular área de triángulo\n3. Calcular área de circulo"
                         "\n4. Calcular volumen de pirámide\n5. Calcular volumen de esfera\nIngrese la opción que desea: ";
@@ -28,19 +43,19 @@ int main() {
 				//cout << "Mayor Número Triangular: " << NumeroTriangular(n) << endl;
 				 }break;
 			case 2:{
-				cout << "Ingrese Lado A: ";
+				/*cout << "Ingrese Lado A: ";
 				cin >> a;
 				cout << "Ingrese Lado B: ";
                                 cin >> b;
 				cout << "Ingrese Lado C: ";
                                 cin >> c;
-				Triangulo triangle(a, b, c);
+				Triangulo triangle(a, b, c);*/
 				cout << "El área del triángulo es: " << triangle.Area() << " u²" << endl;
 			       }break;
 			case 3:{
-				cout << "Ingrese el radio del círculo: ";
+				/*cout << "Ingrese el radio del círculo: ";
 				cin >> radio;
-				Circulo circle(radio);
+				Circulo circle(radio);*/
 				cout << "El área del círculo es: " << circle.Area() << " u²" << endl;
 			       }break;
 			case 4:{
