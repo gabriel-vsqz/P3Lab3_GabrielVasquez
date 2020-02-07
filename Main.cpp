@@ -43,19 +43,9 @@ int main() {
 				//cout << "Mayor Número Triangular: " << NumeroTriangular(n) << endl;
 				 }break;
 			case 2:{
-				/*cout << "Ingrese Lado A: ";
-				cin >> a;
-				cout << "Ingrese Lado B: ";
-                                cin >> b;
-				cout << "Ingrese Lado C: ";
-                                cin >> c;
-				Triangulo triangle(a, b, c);*/
 				cout << "El área del triángulo es: " << triangle.Area() << " u²" << endl;
 			       }break;
 			case 3:{
-				/*cout << "Ingrese el radio del círculo: ";
-				cin >> radio;
-				Circulo circle(radio);*/
 				cout << "El área del círculo es: " << circle.Area() << " u²" << endl;
 			       }break;
 			case 4:{
