@@ -20,5 +20,5 @@ void Piramide :: setAltura (double alt) {
 }
 
 double Piramide :: Volumen() {
-	return ((altura * triangle.getLadoB()) / 3);
+	return ((altura * (triangle.getLadoB()*triangle.getLadoB())  ) / 3);
 }

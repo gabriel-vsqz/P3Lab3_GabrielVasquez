@@ -20,19 +20,18 @@ int NumeroTriangular(int n) {
 
 int main() {
 	cout << "Triángulo\n";
-	cout << "Ingrese Lado A: ";
+        cout << "Ingrese Lado A: ";
         cin >> a;
-	cout << "Ingrese Lado B: ";
-	cin >> b;
-	cout << "Ingrese Lado C: ";
-	cin >> c;
-	Triangulo triangle(a, b, c);
+        cout << "Ingrese Lado B: ";
+        cin >> b;
+        cout << "Ingrese Lado C: ";
+        cin >> c;
+        Triangulo triangle(a, b, c);
 
-	cout << "Círculo\n";
-	cout << "Ingrese el radio del círculo: ";
-	cin >> radio;
-	Circulo circle(radio);
-
+        cout << "Círculo\n";
+        cout << "Ingrese el radio del círculo: ";
+        cin >> radio;
+        Circulo circle(radio);
 
 	do {
 		cout << "\n0. Salir\n1. Identificar número triangular previo\n2. Calcular área de triángulo\n3. Calcular área de circulo"
@@ -57,7 +56,7 @@ int main() {
 				       Piramide pyramid(triangle, alt_pyr);
 				       cout << "El volumen de la pirámide es: " << pyramid.Volumen() <<  " u³" << endl;
 			       }break;
-			case 5:{  
+			case 5:{     
 				       Esfera sphere(circle);
 				       cout << "El volumen de la esfera es: " << sphere.Volumen() << " u³" << endl;
 			       }break;
