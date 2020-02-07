@@ -57,7 +57,7 @@ int main() {
 				       Piramide pyramid(triangle, alt_pyr);
 				       cout << "El volumen de la pirámide es: " << pyramid.Volumen() <<  " u³" << endl;
 			       }break;
-			case 5:{
+			case 5:{  
 				       Esfera sphere(circle);
 				       cout << "El volumen de la esfera es: " << sphere.Volumen() << " u³" << endl;
 			       }break;
