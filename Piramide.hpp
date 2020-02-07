@@ -10,7 +10,7 @@ class Piramide {
                 Piramide();
                 Piramide(Triangulo t, double alt);
                 void setTriangle (Triangulo t);
-                double getTriangle() {
+                Triangulo getTriangle() {
                         return triangle;
                 };
                 void setAltura (double alt);

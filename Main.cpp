@@ -1,20 +1,22 @@
 #include "Triangulo.hpp"
 #include "Circulo.hpp"
-/*#include "Piramide.hpp"
-#include "Esfera.hpp"*/
+#include "Piramide.hpp"
+//#include "Esfera.hpp"
 #include <iostream>
 
 using namespace std;
 
 int opcion, numero = 0, a = 0, b = 0, c = 0, radio = 0;
 
-/*int NumeroTriangular(int n) {
+int NumeroTriangular(int n) {
 	int triangular = 0;
-	for (int i = 1; i < n; i++) {
-		
+	for (int i = 1; i <= n; i++) {
+		if (n >= (triangular + 1) ) {
+				triangular +=i;
+		}
 	}
 	return triangular;
-}*/
+}
 
 int main() {
 	cout << "Triángulo\n";
@@ -38,17 +40,19 @@ int main() {
                 cin >> opcion;
 		switch (opcion) {
 			case 1:{
-				cout << "Ingrese un número: ";
-				cin >> numero;
-				//cout << "Mayor Número Triangular: " << NumeroTriangular(n) << endl;
+				       cout << "Ingrese un número: ";
+       				       cin >> numero;
+       				       cout << "Mayor Número Triangular: " << NumeroTriangular(numero) << endl;
 				 }break;
 			case 2:{
-				cout << "El área del triángulo es: " << triangle.Area() << " u²" << endl;
+				       cout << "El área del triángulo es: " << triangle.Area() << " u²" << endl;
 			       }break;
 			case 3:{
-				cout << "El área del círculo es: " << circle.Area() << " u²" << endl;
+				       cout << "El área del círculo es: " << circle.Area() << " u²" << endl;
 			       }break;
 			case 4:{
+				       Piramide pyramid(triangle, triangle.getAltura());
+				       cout << "El volumen de la pirámide es: " << pyramid.Volumen() <<  " u³" << endl;
 			       }break;
 			case 5:{
 			       }break;
