@@ -1,7 +1,7 @@
 #include "Triangulo.hpp"
 #include "Circulo.hpp"
 #include "Piramide.hpp"
-//#include "Esfera.hpp"
+#include "Esfera.hpp"
 #include <iostream>
 
 using namespace std;
@@ -58,6 +58,8 @@ int main() {
 				       cout << "El volumen de la pirámide es: " << pyramid.Volumen() <<  " u³" << endl;
 			       }break;
 			case 5:{
+				       Esfera sphere(circle);
+				       cout << "El volumen de la esfera es: " << sphere.Volumen() << " u³" << endl;
 			       }break;
 			default:{
 				if (opcion != 0)
@@ -67,4 +69,5 @@ int main() {
 				}
 		}
 	}while (opcion != 0);
+
 }

@@ -1,25 +1,17 @@
 #ifndef ESFERA_HPP
 #define ESFERA_HPP
+#include "Circulo.hpp"
 
-class Circulo {
+class Esfera {
         private:
-                double radio, diametro, circunferencia;
-                double Circunferencia();
+                Circulo circle;
         public:
-                Circulo();
-                Circulo(double r);
-                void setRadio (double r);
-                double getRadio() {
-                        return radio;
+                Esfera();
+                Esfera(Circulo c);
+                void setCircle (Circulo c);
+                Circulo getCircle() {
+                        return circle;
                 };
-                void setDiametro (double d);
-                double getDiametro() {
-                        return diametro;
-                };
-                void setCircunferencia (double c);
-                double getCircunferencia() {
-                        return circunferencia;
-                };
-                double Area();
+                double Volumen();
 };
 #endif
