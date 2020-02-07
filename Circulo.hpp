@@ -23,4 +23,3 @@ class Circulo {
                 double Area();
 };
 #endif
-

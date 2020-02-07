@@ -51,7 +51,10 @@ int main() {
 				       cout << "El área del círculo es: " << circle.Area() << " u²" << endl;
 			       }break;
 			case 4:{
-				       Piramide pyramid(triangle, triangle.getAltura());
+				       double alt_pyr = 0;
+				       cout << "Ingrese la altura de la pirámide: ";
+				       cin >> alt_pyr;
+				       Piramide pyramid(triangle, alt_pyr);
 				       cout << "El volumen de la pirámide es: " << pyramid.Volumen() <<  " u³" << endl;
 			       }break;
 			case 5:{
