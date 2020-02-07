@@ -1,1 +1,26 @@
-#pragma
+#ifndef CIRCULO_HPP
+#define CIRCULO_HPP
+
+class Circulo {
+        private:
+                double radio, diametro, circunferencia;
+                double Circunferencia();
+        public:
+                Circulo();
+                Circulo(double r);
+                void setRadio (double r);
+                double getRadio() {
+                        return radio;
+                };
+                void setDiametro (double d);
+                double getDiametro() {
+                        return diametro;
+                };
+                void setLadoC (double c);
+                double getCircunferencia() {
+                        return circunferencia;
+                };
+                double Area();
+};
+#endif
+
